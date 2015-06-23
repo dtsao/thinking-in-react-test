@@ -1,4 +1,4 @@
 import React from 'react';
-import App from './App';
+import {FilterableProductTable, PRODUCTS} from './App';
 
-React.render(<App />, document.getElementById('root'));
+React.render(<FilterableProductTable products={PRODUCTS} />, document.getElementById('root'));

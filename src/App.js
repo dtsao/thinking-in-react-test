@@ -1,3 +1,5 @@
+import React from 'react';
+
 var ProductCategoryRow = React.createClass({
     render: function() {
         return (<tr><th colSpan="2">{this.props.category}</th></tr>);
@@ -81,7 +83,9 @@ var PRODUCTS = [
     {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
-React.render(<FilterableProductTable products={PRODUCTS} />, document.body);
+export {FilterableProductTable, PRODUCTS};
+
+//React.render(<FilterableProductTable products={PRODUCTS} />, document.body);
 
 
 //import React, { Component } from 'react';
